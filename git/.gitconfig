@@ -1,0 +1,24 @@
+[user]
+	email = lasse.schuirmann@gmail.com
+	name = Lasse Schuirmann
+
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = lasse.schuirmann@gmail.com
+
+[alias]
+    c = commit
+	ca = commit -a
+    ce = commit --amend
+    ctmp = commit -a -m tmp
+
+    ri = rebase -i
+    ra = rebase --abort
+
+    ama = am --abort
+    amc = am --continue
+
+[push]
+	default = simple
