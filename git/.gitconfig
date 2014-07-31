@@ -10,7 +10,7 @@
 
 [alias]
     c = commit
-	ca = commit -a
+    ca = commit -a
     ce = commit --amend
     ctmp = commit -a -m tmp
 
