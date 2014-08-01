@@ -12,10 +12,12 @@
     c = commit
     ca = commit -a
     ce = commit --amend
+    cea = commit --amend -a
     ctmp = commit -a -m tmp
 
-    ri = rebase -i
+    ri = rebase --interactive
     ra = rebase --abort
+    rc = rebase --continue
 
     ama = am --abort
     amc = am --continue
