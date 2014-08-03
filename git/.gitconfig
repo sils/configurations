@@ -20,8 +20,10 @@
 
     c = commit
     ca = commit -a
+    cam = commit -a -m
     ce = commit --amend
     cea = commit --amend -a
+    ceam = commit --amend -a -m
     ctmp = commit -a -m tmp
 
     ri = rebase --interactive
@@ -29,4 +31,4 @@
     rc = rebase --continue
 
 [push]
-	default = simple
+    default = simple
