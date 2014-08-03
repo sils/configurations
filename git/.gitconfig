@@ -1,12 +1,12 @@
 [user]
-	email = lasse.schuirmann@gmail.com
-	name = Lasse Schuirmann
+    email = lasse.schuirmann@gmail.com
+    name = Lasse Schuirmann
 
 [sendemail]
-	smtpserver = smtp.gmail.com
-	smtpserverport = 587
-	smtpencryption = tls
-	smtpuser = lasse.schuirmann@gmail.com
+    smtpserver = smtp.gmail.com
+    smtpserverport = 587
+    smtpencryption = tls
+    smtpuser = lasse.schuirmann@gmail.com
 
 [core]
     editor = vim
