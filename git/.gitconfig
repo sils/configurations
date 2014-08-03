@@ -47,6 +47,9 @@
     rc = rebase --continue
     rm = rebase master
 
+    res = reset
+    resh = reset --hard
+
     s = send-email
     sh = show # thats Show Head
     s-libosinfo = send-email --to=libosinfo@redhat.com
