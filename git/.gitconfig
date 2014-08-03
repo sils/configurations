@@ -29,6 +29,7 @@
     ce = commit --amend
     cem = commit --amend --message
     cea = commit --amend --all
+    cae = commit --amend --all
     ceam = commit --amend --all --message
     ct = commit --all --message tmp
     cet = commit --amend --all --message tmp
