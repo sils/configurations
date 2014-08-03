@@ -26,9 +26,11 @@
     ceam = commit --amend -a -m
     ctmp = commit -a -m tmp
 
+    p = push
+    pf = push --force
+
     ri = rebase --interactive
     ra = rebase --abort
     rc = rebase --continue
-
 [push]
     default = simple

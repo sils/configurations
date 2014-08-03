@@ -13,9 +13,13 @@ syntax on " Syntax highlighting
 
 " Highlight trailing spaces
 match Error "\s\+$"
-match Error "\t"
 
+" Show tabs as '>---'
+set list
+set listchars=tab:>-
+
+let c_space_errors = 1
+let java_space_errors = 1
 " Vala things
 let vala_comment_strings = 1
 let vala_space_errors = 1 " Highlight space errors
-
