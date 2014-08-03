@@ -8,7 +8,16 @@
 	smtpencryption = tls
 	smtpuser = lasse.schuirmann@gmail.com
 
+[core]
+    editor = vim
+
 [alias]
+    a = add
+    ap = add -p
+
+    ama = am --abort
+    amc = am --continue
+
     c = commit
     ca = commit -a
     ce = commit --amend
@@ -18,9 +27,6 @@
     ri = rebase --interactive
     ra = rebase --abort
     rc = rebase --continue
-
-    ama = am --abort
-    amc = am --continue
 
 [push]
 	default = simple
