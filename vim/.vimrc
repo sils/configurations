@@ -11,6 +11,10 @@ set laststatus=2
 set showmatch " Show matching brackets
 syntax on " Syntax highlighting
 
+" Highlight trailing spaces
+match Error "\s\+$"
+match Error "\t"
+
 " Vala things
 let vala_comment_strings = 1
 let vala_space_errors = 1 " Highlight space errors
