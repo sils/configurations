@@ -40,6 +40,7 @@
     l = log
 
     m = checkout master
+    mt = mergetool
 
     p = push
     pf = push --force
