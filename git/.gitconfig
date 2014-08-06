@@ -37,6 +37,8 @@
     d = diff
     dif = diff # typo
 
+    l = log
+
     m = checkout master
 
     p = push
