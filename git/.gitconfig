@@ -53,6 +53,8 @@
 
     s = send-email
     sh = show # thats Show Head
+    st = status
+    stat = status
     s-libosinfo = send-email --to=libosinfo@redhat.com
 [push]
     default = simple
