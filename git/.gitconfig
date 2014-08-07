@@ -45,6 +45,8 @@
 
     p = push
     pf = push --force
+    pu = push -u
+    puo = push -u origin
 
     r = rebase
     ri = rebase --interactive
