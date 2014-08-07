@@ -35,6 +35,7 @@
     cet = commit --amend --all --message tmp
 
     d = diff
+    ds = diff --staged
     dif = diff # typo
 
     l = log
