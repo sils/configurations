@@ -38,12 +38,15 @@
     ds = diff --staged
     dif = diff # typo
 
+    f = fetch
+
     l = log
 
     m = checkout master
     mt = mergetool
 
     p = push
+    pl = pull
     pf = push --force
     pu = push -u
     puo = push -u origin
