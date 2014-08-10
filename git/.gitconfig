@@ -35,6 +35,8 @@
     cet = commit --amend --all --message tmp
 
     d = diff
+    dh = diff HEAD
+    dm = diff master
     ds = diff --staged
     dif = diff # typo
 
@@ -65,5 +67,6 @@
     st = status
     stat = status
     s-libosinfo = send-email --to=libosinfo@redhat.com
+
 [push]
     default = simple
