@@ -55,6 +55,7 @@
 
     r = rebase
     ri = rebase --interactive
+    rim = rebase --interactive master
     ra = rebase --abort
     rc = rebase --continue
     rm = rebase master

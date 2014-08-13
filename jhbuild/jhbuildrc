@@ -36,4 +36,4 @@ autogenargs='--disable-static --disable-gtk-doc'
 # Set makeargs to 'V=1' for verbose build output.
 makeargs = '-j8'
 
-# skip = ['WebKit']
+# skip = ['WebKit', 'WebKit1']
