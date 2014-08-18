@@ -42,6 +42,9 @@
 
     f = fetch
 
+    g = grep
+    gi = grep -i
+
     l = log
 
     m = checkout master
