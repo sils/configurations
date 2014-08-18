@@ -19,6 +19,11 @@
     amc = am --continue
 
     b = branch
+    bs = bisect start
+    bg = bisect good
+    bb = bisect bad
+    br = bisect reset
+
     co = checkout
     con = checkout -b
 
