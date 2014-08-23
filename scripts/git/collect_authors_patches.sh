@@ -54,11 +54,11 @@ for O in $(git log --pretty=format:"%h" --author="$author"); do
                     mkdir -p $output/$subdir
                     git format-patch $begin^^..$end -o$output/$subdir #--start-number=$patchcount
                     patchcount=$(($patchcount + $rangecount))
-                    rangecount=1
                 else
                     echo "Omitting patch series..."
                 fi
                 end=""
+                rangecount=1
             fi
         fi
     done
