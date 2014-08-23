@@ -19,6 +19,14 @@
     amc = am --continue
 
     b = branch
+
+    bs = bisect start
+    bg = bisect good
+    bb = bisect bad
+    br = bisect reset
+
+    bl = blame
+
     co = checkout
     con = checkout -b
 
@@ -47,6 +55,9 @@
 
     f = fetch
 
+    g = grep
+    gi = grep -i
+
     l = log
 
     m = checkout master
@@ -60,6 +71,7 @@
 
     r = rebase
     ri = rebase --interactive
+    rim = rebase --interactive master
     ra = rebase --abort
     rc = rebase --continue
     rm = rebase master
