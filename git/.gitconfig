@@ -54,6 +54,7 @@
     dif = diff # typo
 
     f = fetch
+    fp = format-patch
 
     g = grep
     gi = grep -i
