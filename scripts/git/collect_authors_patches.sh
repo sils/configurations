@@ -33,22 +33,30 @@ for O in $(git log --pretty=format:"%h" --author="$author"); do
                 tmp=$(($patchcount - 1))
                 echo "Adding one patch to $tmp existing:"
                 git log $O^..$O
-                echo "Please enter a subdirectory name for this patch:"
+                echo "Please enter a subdirectory name for this patch (leave this empty to leave this patch out, use ./ for the root directory):"
                 read subdir
-                mkdir -p $output/$subdir
-                git format-patch $O^..$O -o$output/$subdir #--start-number=$patchcount
-                ((patchcount++))
+                if [[ "$subdir" != "" ]]; then
+                    mkdir -p $output/$subdir
+                    git format-patch $O^..$O -o$output/$subdir #--start-number=$patchcount
+                    ((patchcount++))
+                else
+                    echo "Omitting patch..."
+                fi
             else
                 tmp=$(($patchcount - 1))
                 echo "Adding $rangecount patches to $tmp existing."
                 git log $begin^^..$end --oneline
-                echo "Please enter a subdirectory name for these patches:"
+                echo "Please enter a subdirectory name for these patches (leave this empty to leave this patch out, use ./ for the root directory):"
                 read subdir
-                mkdir -p $output/$subdir
-                git format-patch $begin^^..$end -o$output/$subdir #--start-number=$patchcount
-                end=""
-                patchcount=$(($patchcount + $rangecount))
-                rangecount=1
+                if [[ "$subdir" != "" ]]; then
+                    mkdir -p $output/$subdir
+                    git format-patch $begin^^..$end -o$output/$subdir #--start-number=$patchcount
+                    end=""
+                    patchcount=$(($patchcount + $rangecount))
+                    rangecount=1
+                else
+                    echo "Omitting patch series..."
+                fi
             fi
         fi
     done
