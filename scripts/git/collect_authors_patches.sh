@@ -33,7 +33,7 @@ for O in $(git log --pretty=format:"%h" --author="$author"); do
                 tmp=$(($patchcount - 1))
                 echo "Adding $rangecount patches to $tmp existing."
                 git log $begin^^..$end --oneline
-                echo "Please enter a subdirectory name for this patch:"
+                echo "Please enter a subdirectory name for these patches:"
                 read subdir
                 mkdir -p $output/$subdir
                 git format-patch $begin^^..$end -o$output/$subdir
