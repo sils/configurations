@@ -33,6 +33,11 @@
     ceam = commit --amend --all --message
     ct = commit --all --message tmp
     cet = commit --amend --all --message tmp
+    cempty = commit --allow-empty-message -m ''
+    caempty = commit --all --allow-empty-message -m ''
+    ceempty = commit --amend --allow-empty-message -m ''
+    caeempty = commit --all --amend --allow-empty-message -m ''
+    ceaempty = commit --all --amend --allow-empty-message -m ''
 
     d = diff
     dh = diff HEAD
@@ -63,6 +68,7 @@
     resh = reset --hard
 
     s = send-email
+    se = send-email
     sh = show # thats Show Head
     st = status
     stat = status
