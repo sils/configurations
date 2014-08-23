@@ -29,6 +29,8 @@ for O in $(git log --pretty=format:"%h" --author="$author"); do
             begin=$O
             ((rangecount++))
         else
+            echo
+            echo
             if [[ "$end" == "" ]]; then
                 tmp=$(($patchcount - 1))
                 echo "Adding one patch to $tmp existing:"
