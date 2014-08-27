@@ -30,6 +30,9 @@
     co = checkout
     con = checkout -b
 
+    cl = clone
+    cld = clone --depth
+
     c = commit
     cm = commit --message
     ca = commit --all
@@ -58,6 +61,8 @@
 
     g = grep
     gi = grep -i
+
+    i = init
 
     l = log
 
