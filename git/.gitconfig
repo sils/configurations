@@ -33,14 +33,14 @@
     cl = clone
     cld = clone --depth
 
-    c = commit
+    c = commit -v
     cm = commit --message
-    ca = commit --all
+    ca = commit -v --all
     cam = commit --all --message
-    ce = commit --amend
+    ce = commit -v --amend
     cem = commit --amend --message
-    cea = commit --amend --all
-    cae = commit --amend --all
+    cea = commit -v --amend --all
+    cae = commit -v --amend --all
     ceam = commit --amend --all --message
     ct = commit --all --message tmp
     cet = commit --amend --all --message tmp
