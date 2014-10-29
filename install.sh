@@ -10,3 +10,6 @@ ln -s $DIR/git/.gitconfig ~/
 # Install jhbuild configurations
 ln -s $DIR/jhbuild/jhbuildrc ~/.config/
 
+# Install octaverc
+ln -s $DIR/octave/.octaverc ~/
+

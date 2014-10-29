@@ -1,0 +1,32 @@
+# Some things stolen from
+# http://stackoverflow.com/questions/22506624/how-to-make-octave-use-gnuplot-instead-of-fltk-by-default
+
+## use man instead of help
+function man (name = "help");
+  help (char (name));
+endfunction
+
+## no octave-core
+crash_dumps_octave_core (0);
+edit mode sync;
+
+## pretty prompt
+PS1 ("\\[\\033[01;31m\\]\\s:\\#> \\[\\033[0m\\]");
+## no > for multi-line input
+PS2 ("");
+
+## default image size to take the right half of the monitor
+set (0,
+  "DefaultFigurePosition",
+    [get(0, "screensize")(3)/2    1 ...
+     get(0, "screensize")(3)/2    get(0, "screensize")(4)]
+);
+
+## if we run clear all, run this file again
+function clear (varargin)
+  args = sprintf (', "%s"', varargin{:});
+  evalin ("caller", ['builtin ("clear"' args ')']);
+  source ("~/.octaverc");
+endfunction
+
+graphics_toolkit("gnuplot")
