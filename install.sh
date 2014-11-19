@@ -19,6 +19,6 @@ read
 sudo sed -i 's,/bin/bash,/bin/zsh,' /etc/default/useradd
 sudo chsh -s /bin/zsh $USER
 
-wget -O /etc/zshrc http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
+sudo wget -O /etc/zshrc http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc
 touch ~/.zshrc
 echo "alias g=git" >> .zshrc
