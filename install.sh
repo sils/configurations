@@ -13,3 +13,9 @@ ln -s $DIR/jhbuild/jhbuildrc ~/.config/
 # Install octaverc
 ln -s $DIR/octave/.octaverc ~/
 
+echo "Please make sure the zsh is installed or abort this process (Ctrl+C)."
+read
+
+sudo sed -i 's,/bin/bash,/bin/zsh,' /etc/default/useradd
+sudo chsh -s /bin/zsh $USER
+
