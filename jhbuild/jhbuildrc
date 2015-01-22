@@ -17,13 +17,13 @@
 # Or to build the old GNOME 2.32:
 # moduleset = 'gnome2/gnome-2.32'
 # modules = ['meta-gnome-desktop']
-os.environ['PYTHON'] = '/usr/bin/python2'
+#os.environ['PYTHON'] = '/usr/bin/python2'
 
 # what directory should the source be checked out to?
-checkoutroot = '~/prog/gnome/srcn'
+checkoutroot = '~/prog/gnome/src'
 
 # the prefix to configure/install modules to (must have write access)
-prefix = '~/prog/gnome/binn'
+prefix = '~/prog/gnome/bin'
 
 # custom CFLAGS / environment pieces for the build
 # os.environ['CFLAGS'] = '-Wall -g -O0'

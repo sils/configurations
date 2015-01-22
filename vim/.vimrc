@@ -10,6 +10,8 @@ set ruler " Have a ruler with number of chars in the line below
 set laststatus=2
 set showmatch " Show matching brackets
 syntax on " Syntax highlighting
+" Commit messages:
+au FileType gitcommit set tw=72
 
 " Highlight trailing spaces
 match Error "\s\+$"
