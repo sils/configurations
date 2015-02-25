@@ -94,3 +94,5 @@
 
 [push]
     default = simple
+[merge]
+    ff = only
