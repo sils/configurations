@@ -50,6 +50,9 @@
     caeempty = commit --all --amend --allow-empty-message -m ''
     ceaempty = commit --all --amend --allow-empty-message -m ''
 
+    cg = config --global
+    cge = config --global -e
+
     d = diff
     dh = diff HEAD
     dm = diff master
