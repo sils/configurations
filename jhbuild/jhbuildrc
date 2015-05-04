@@ -20,10 +20,10 @@
 #os.environ['PYTHON'] = '/usr/bin/python2'
 
 # what directory should the source be checked out to?
-checkoutroot = '~/prog/gnome/src'
+#checkoutroot = '~/prog/gnome/src'
 
 # the prefix to configure/install modules to (must have write access)
-prefix = '~/prog/gnome/bin'
+#prefix = '~/prog/gnome/bin'
 
 # custom CFLAGS / environment pieces for the build
 # os.environ['CFLAGS'] = '-Wall -g -O0'
