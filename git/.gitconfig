@@ -98,6 +98,6 @@
     s-libosinfo = send-email --to=libosinfo@redhat.com
 
 [push]
-    default = simple
+    default = current
 [merge]
     ff = only
