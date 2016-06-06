@@ -1,10 +1,15 @@
 # Aliases
 alias g=git
+
 alias p='sudo pacman'
 alias pr='sudo pacman -R'
 alias ps='pacman -Ss'
 alias pi='sudo pacman -Syu'
+
 alias pipi='pip install'
+
+alias s='sudo'
+alias sr='sudo !!'
 
 # Python venv
 . ~/venvs/def/bin/activate
