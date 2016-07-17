@@ -7,7 +7,7 @@ set ignorecase
 set hlsearch " Highlight searches
 set title
 set ruler " Have a ruler with number of chars in the line below
-set laststatus=2
+set laststatus=1
 set showmatch " Show matching brackets
 syntax on " Syntax highlighting
 " Commit messages:
