@@ -11,6 +11,8 @@ alias pipi='pip install'
 alias s='sudo'
 alias sr='sudo !!'
 
+alias ipy='ipython --no-confirm-exit --no-banner'
+
 # Python venv
 . ~/venvs/def/bin/activate
 
