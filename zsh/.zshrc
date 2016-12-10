@@ -7,6 +7,7 @@ alias ps='pacman -Ss'
 alias pi='sudo pacman -Syu'
 
 alias pipi='pip install'
+alias pipir='pip install -r requirements.txt'
 
 alias s='sudo'
 alias sr='sudo !!'
