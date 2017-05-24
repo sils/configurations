@@ -7,7 +7,11 @@ ln -s $DIR/vim/.vim ~/
 # Install git configurations
 ln -s $DIR/git/.gitconfig ~/
 
-# Install jhbuild configurations
+# Install jhbuild configurations\\
+
+
+
+
 ln -s $DIR/jhbuild/jhbuildrc ~/.config/
 
 # Install octaverc
