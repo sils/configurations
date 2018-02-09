@@ -22,8 +22,3 @@ alias ae='. ~/.venvs/aer/bin/activate'
 
 # Ruby gems
 export PATH=$PATH:~/.gem/ruby/2.3.0/bin:~/Downloads/ngrok-stable-linux-amd64
-
-# coala autocompletion
-autoload bashcompinit
-bashcompinit
-eval "$(register-python-argcomplete `which coala`)"
