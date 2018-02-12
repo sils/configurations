@@ -22,3 +22,6 @@ alias ae='. ~/.venvs/aer/bin/activate'
 
 # Ruby gems
 export PATH=$PATH:~/.gem/ruby/2.3.0/bin:~/Downloads/ngrok-stable-linux-amd64
+
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
